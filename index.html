@@ -1,0 +1,411 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>이광재 의정소식 | 30년 박제된 공제 깨부수겠다</title>
+<meta name="description" content="고성 판치는 국감 속 ‘정책 국감’ 이광재 의원 — 30년 묶인 세금 공제를 물가연동제로 현실화하는 결의안 대표발의.">
+<meta property="og:title" content="[특종 인터뷰] 이광재 “30년 박제된 공제 깨부수겠다”">
+<meta property="og:description" content="5년 넘게 손 안 댄 공제·비과세 조문 29개 — ‘스텔스 증세’를 끝낸다.">
+<meta property="og:image" content="261023.jpg">
+<meta property="og:type" content="article">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&family=Noto+Serif+KR:wght@700;900&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#2c2c2a;
+    --ink-2:#444441;
+    --muted:#5f5e5a;
+    --page:#faf9f5;
+    --card:#ffffff;
+    --beige:#f1efe8;
+    --beige-line:#d3d1c7;
+    --blue-deep:#0c447c;
+    --blue:#185fa5;
+    --blue-mid:#378add;
+    --blue-lt:#85b7eb;
+    --blue-pale:#b5d4f4;
+    --blue-soft:#e6f1fb;
+    --red-deep:#791f1f;
+    --red-dk:#a32d2d;
+    --red:#e24b4a;
+    --red-lt:#f09595;
+    --red-pale:#f7c1c1;
+    --red-soft:#fcebeb;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0;background:#ebe9e2;color:var(--ink);
+    font-family:"Noto Sans KR",system-ui,-apple-system,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;
+    line-height:1.65;word-break:keep-all;overflow-wrap:break-word;
+  }
+  img,svg{max-width:100%;display:block}
+  .sheet{max-width:760px;margin:0 auto;background:var(--page);padding:10px 0}
+
+  /* 블록 카드 — 연분홍(강조) · 베이지(기본) · 연파랑(그래프) */
+  .blk{margin:0 10px 8px;border:1px solid;border-radius:12px;padding:20px 18px}
+  .blk.red{background:var(--red-soft);border-color:var(--red-lt)}
+  .blk.beige{background:var(--beige);border-color:var(--beige-line)}
+  .blk.blue{background:var(--blue-soft);border-color:var(--blue-lt)}
+
+  /* 제호 · 속보 */
+  .top{padding:14px 18px}
+  .masthead{display:flex;align-items:center;justify-content:space-between;gap:6px;flex-wrap:wrap}
+  .brand{font-family:"Noto Serif KR",serif;font-weight:900;font-size:22px;letter-spacing:-.5px;color:var(--ink)}
+  .brand em{font-style:normal;color:var(--blue)}
+  .issue{font-size:12.5px;color:var(--red-deep)}
+  .ticker{margin-top:10px;display:flex;gap:8px;align-items:center;font-weight:700;font-size:14px;color:var(--red-deep);line-height:1.45}
+  .ticker .tag{background:var(--red-dk);color:#fff;padding:1px 8px;border-radius:6px;font-weight:900;flex:none}
+
+  /* 헤드라인 */
+  .badges{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:14px}
+  .badge{background:var(--red-dk);color:#fff;font-weight:900;font-size:13px;padding:3px 10px;border-radius:6px;letter-spacing:1px}
+  .badge.blue{background:var(--blue)}
+  .headline{font-family:"Noto Serif KR",serif;font-weight:900;margin:0;letter-spacing:-1px;line-height:1.25;font-size:clamp(30px,8vw,52px);color:var(--ink)}
+  .headline .pre{display:block;font-size:.52em;color:var(--ink-2);margin-bottom:4px}
+  .headline .name{color:var(--blue-deep)}
+  .headline .q{color:var(--red-dk)}
+  .deck{margin:14px 0 0;font-size:17px;font-weight:500;color:var(--ink-2);background:var(--card);border:1px solid var(--beige-line);border-radius:8px;padding:10px 14px}
+  .deck b{color:var(--red-dk)}
+
+  /* 지면 원본 */
+  .paper{margin:0 10px 8px;padding:14px}
+  .paper a{display:block}
+  .paper img{width:100%;height:auto;border-radius:8px;border:1px solid var(--beige-line)}
+  .paper p{margin:10px 0 0;color:var(--muted);font-size:12.5px;text-align:center}
+
+  /* 핵심 요약 */
+  .summary h2{margin:0 0 8px;font-size:13px;letter-spacing:3px;color:var(--blue)}
+  .summary ol{list-style:none;margin:0;padding:0;counter-reset:s}
+  .summary li{counter-increment:s;position:relative;padding:7px 0 7px 36px;font-size:16.5px;font-weight:700;line-height:1.45;color:var(--blue-deep)}
+  .summary li::before{content:counter(s);position:absolute;left:0;top:7px;width:24px;height:24px;border-radius:50%;background:var(--red);color:#fff;font-weight:900;display:grid;place-items:center;font-size:13px}
+
+  /* 섹션 공통 */
+  .sec-head{margin:0 0 6px;font-family:"Noto Serif KR",serif;font-weight:900;font-size:clamp(22px,5.6vw,28px);line-height:1.3;letter-spacing:-.5px;color:var(--ink)}
+  .sec-head .no{display:inline-block;background:var(--blue);color:#fff;font-family:"Noto Sans KR",sans-serif;font-size:12px;padding:2px 8px;border-radius:6px;margin-right:6px;vertical-align:5px;letter-spacing:1px}
+  .sec-head .hl{color:var(--red-dk)}
+  .lede{margin:0 0 14px;color:var(--ink-2);font-size:15.5px}
+  .card{background:var(--card);border:1px solid var(--blue-lt);border-radius:8px;padding:16px;margin-top:10px}
+  .card-title{margin:0 0 12px;font-size:14px;font-weight:900;color:var(--blue-deep);display:flex;justify-content:space-between;gap:8px;align-items:baseline}
+  .card-title span{font-weight:400;font-size:11.5px;color:var(--muted)}
+  .quote{margin:12px 0 0;padding:14px 16px;background:var(--card);border:1px solid var(--red-lt);border-radius:8px;color:var(--red-deep);font-family:"Noto Serif KR",serif;font-weight:700;font-size:17px;line-height:1.55}
+  .quote::before{content:"“";color:var(--red);font-size:44px;line-height:0;vertical-align:-16px;margin-right:4px}
+
+  /* 도넛 */
+  .donut-wrap{display:grid;grid-template-columns:150px 1fr;gap:18px;align-items:center}
+  .legend{list-style:none;margin:0;padding:0;font-size:14px}
+  .legend li{display:flex;align-items:center;gap:8px;padding:5px 0;border-bottom:1px dashed var(--beige-line)}
+  .legend li:last-child{border-bottom:0}
+  .legend i{width:12px;height:12px;border-radius:3px;flex:none}
+  .legend b{margin-left:auto;font-size:16px}
+
+  /* 가로 막대 */
+  .hbar{margin:0 0 12px}
+  .hbar:last-child{margin-bottom:0}
+  .hbar .lab{display:flex;justify-content:space-between;font-size:13.5px;gap:8px}
+  .hbar .lab b{font-weight:900;white-space:nowrap}
+  .track{height:20px;background:var(--beige);border-radius:6px;margin-top:4px;overflow:hidden}
+  .fill{height:100%;background:var(--blue-mid);border-radius:6px;display:flex;align-items:center;justify-content:flex-end;padding-right:6px;color:#fff;font-size:11.5px;font-weight:700}
+  .fill.red{background:var(--red)}
+
+  /* 상속세 비교 */
+  .versus{display:grid;grid-template-columns:1fr auto 1fr;gap:10px;align-items:end;text-align:center}
+  .col .bar-v{margin:0 auto;width:62px;background:var(--blue-lt);border-radius:6px 6px 0 0}
+  .col.hot .bar-v{background:var(--red)}
+  .col .num{font-family:"Noto Serif KR",serif;font-weight:900;font-size:24px;line-height:1.2;margin-bottom:6px;color:var(--blue-deep)}
+  .col.hot .num{color:var(--red-dk)}
+  .col .yr{margin-top:8px;font-weight:900;font-size:14px}
+  .col .sub{font-size:12px;color:var(--muted)}
+  .times{align-self:center;background:var(--red-soft);border:1px solid var(--red-lt);color:var(--red-deep);font-weight:900;border-radius:50%;width:64px;height:64px;display:grid;place-items:center;line-height:1.1;font-size:12px}
+  .times b{font-size:20px;display:block;color:var(--red-dk)}
+
+  /* 세금 비교 */
+  .tax{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;align-items:end;height:200px;border-bottom:2px solid var(--beige-line);padding:0 4px}
+  .tax div{display:flex;flex-direction:column;justify-content:flex-end;align-items:center;height:100%}
+  .tax .v{font-family:"Noto Serif KR",serif;font-weight:900;font-size:20px;margin-bottom:4px;color:var(--red-dk)}
+  .tax .b{width:70%;background:var(--red);border-radius:6px 6px 0 0}
+  .tax .zero .v{color:var(--blue)}
+  .tax .zero .b{background:var(--blue-mid);height:4px}
+  .tax-lab{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;text-align:center;font-size:12.5px;margin-top:8px;color:var(--ink-2);line-height:1.4}
+
+  /* 흐름도 */
+  .step{display:grid;grid-template-columns:56px 1fr;gap:12px;align-items:center;padding:10px;background:var(--card);border:1px solid var(--blue-lt);border-radius:8px}
+  .step .ico{width:56px;height:56px;border-radius:8px;display:grid;place-items:center;font-weight:900;font-size:13px}
+  .step.bad{border-color:var(--red-lt)}
+  .step.bad .ico{background:var(--red-pale);color:var(--red-deep)}
+  .step.fix .ico{background:var(--blue-pale);color:var(--blue-deep)}
+  .step.good .ico{background:var(--blue-soft);color:var(--blue-deep);border:1px solid var(--blue-lt)}
+  .step h4{margin:0;font-size:16px}
+  .step p{margin:2px 0 0;font-size:13.5px;color:var(--muted)}
+  .arrow{height:24px;display:grid;place-items:center}
+  .arrow::after{content:"";border-left:9px solid transparent;border-right:9px solid transparent;border-top:11px solid var(--red)}
+  .who{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
+  .who span{font-size:13.5px;font-weight:700;padding:5px 12px;border-radius:999px;background:var(--card);border:1px solid var(--blue-lt);color:var(--blue-deep)}
+  .who span.main{background:var(--blue);border-color:var(--blue);color:#fff}
+  .who span.red{background:var(--red-soft);border-color:var(--red-lt);color:var(--red-deep)}
+
+  /* 예산 */
+  .kpis{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+  .kpi{background:var(--card);border:1px solid var(--red-lt);border-radius:8px;padding:14px}
+  .kpi .n{font-family:"Noto Serif KR",serif;font-weight:900;font-size:30px;line-height:1.1;color:var(--red-dk)}
+  .kpi .n small{font-size:.5em}
+  .kpi p{margin:4px 0 0;font-size:13px;color:var(--ink-2)}
+  .chips{display:flex;flex-wrap:wrap;gap:6px}
+  .chips span{background:var(--blue-soft);border:1px solid var(--blue-lt);color:var(--blue-deep);font-weight:900;font-size:14px;padding:5px 12px;border-radius:999px}
+  .chips span::after{content:" ▲";color:var(--red);font-size:11px}
+
+  /* 성적표 */
+  .score{display:grid;grid-template-columns:repeat(4,1fr);gap:6px}
+  .score div{background:var(--blue-soft);border:1px solid var(--blue-lt);border-radius:8px;text-align:center;padding:12px 4px 10px;font-size:13.5px;font-weight:700;color:var(--blue-deep)}
+  .score div svg{margin:0 auto 6px;width:28px;height:28px}
+  .rank{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:10px}
+  .rank div{background:var(--blue-pale);border-radius:8px;padding:12px 14px}
+  .rank b{font-family:"Noto Serif KR",serif;font-size:30px;color:var(--blue-deep);font-weight:900;line-height:1.1}
+  .rank p{margin:2px 0 0;font-size:13px;color:var(--blue)}
+
+  /* 원문 보기 */
+  .cta{text-align:center;padding:28px 18px}
+  .cta p{margin:0 0 6px;font-size:13px;color:var(--red-dk)}
+  .cta h3{margin:0 0 16px;font-family:"Noto Serif KR",serif;font-weight:900;font-size:21px;line-height:1.4;color:var(--ink)}
+  .cta a{display:inline-block;background:var(--red-dk);color:#fff;text-decoration:none;font-weight:900;font-size:17px;padding:13px 28px;border-radius:8px}
+  .cta a:hover{background:var(--blue)}
+  footer{font-size:12.5px;line-height:1.7;color:var(--muted)}
+  footer b{color:var(--ink)}
+
+  @media (min-width:640px){
+    .sheet{padding:16px 0}
+    .blk,.paper{margin:0 16px 10px;padding:26px 28px}
+    .top{padding:16px 28px}
+    .two{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    .score{grid-template-columns:repeat(8,1fr)}
+  }
+  /* 휴대폰: 좌우 여백 없이 화면 가로를 꽉 채움 */
+  @media (max-width:639px){
+    body{background:var(--page)}
+    .sheet{padding:0}
+    .blk{margin:0 0 6px;border-radius:0;border-left:0;border-right:0;padding:20px 14px}
+    .top{padding:14px}
+    .paper{padding:0 0 12px}
+    .paper img{border-radius:0;border:0}
+    .card{padding:14px 12px}
+    .donut-wrap{gap:12px}
+  }
+  @media (max-width:380px){
+    .donut-wrap{grid-template-columns:1fr}
+    .donut-wrap svg{max-width:170px;margin:0 auto}
+    .col .num{font-size:20px}
+    .tax .v{font-size:17px}
+  }
+</style>
+</head>
+<body>
+<div class="sheet">
+
+  <header class="blk red top">
+    <div class="masthead">
+      <div class="brand">이광재 <em>의정소식</em></div>
+      <div class="issue">2026. 10. 23. · 국정감사 특집호</div>
+    </div>
+    <div class="ticker"><span class="tag">속보</span><span>‘과세·제재 기준 현실화 결의안’ 대표발의 — 민주당 의원 19명 동참</span></div>
+  </header>
+
+  <section class="blk beige">
+    <div class="badges"><span class="badge">특종 인터뷰</span><span class="badge blue">정책 국감</span></div>
+    <h1 class="headline">
+      <span class="pre">고성 판치는 국감서…</span>
+      <span class="name">이광재</span> <span class="q">“30년 박제된 공제 깨부수겠다”</span>
+    </h1>
+    <p class="deck">물가는 오르는데 공제는 30년째 제자리. 누구도 모르게 이뤄진 <b>‘스텔스 증세’</b>를 끝냅니다.</p>
+  </section>
+
+  <figure class="blk beige paper">
+    <a href="261023.jpg" target="_blank" rel="noopener"><img src="261023.jpg" alt="한국일보 2026년 10월 23일자 ‘이영태의 초점’ 이광재 의원 인터뷰 지면" width="901" height="1280"></a>
+    <p>한국일보 2026.10.23 ‘이영태의 초점’ · 이미지를 누르면 크게 볼 수 있습니다</p>
+  </figure>
+
+  <section class="blk blue summary">
+    <h2>한눈에 보는 핵심</h2>
+    <ol>
+      <li>5년 넘게 손 안 댄 공제·비과세 조문 29개</li>
+      <li>해법은 물가연동제 — 4~5년마다 공제액 조정</li>
+      <li>예결위원장으로 40조 불용액 엄정 심사</li>
+      <li>정치인도 ‘데이터 성적표’로 평가받아야</li>
+    </ol>
+  </section>
+
+  <!-- 01 박제된 공제 -->
+  <section class="blk blue">
+    <h2 class="sec-head"><span class="no">01</span>30년 박제된 공제, <span class="hl">“스텔스 증세”</span></h2>
+    <p class="lede">국세청 자료로 확인한 결과, 5년 이상 개정되지 않은 공제·비과세 조문만 29개입니다.</p>
+
+    <div class="two">
+      <div class="card">
+        <p class="card-title">개정 안 된 기간별 조문 <span>자료: 국세청</span></p>
+        <div class="donut-wrap">
+          <svg viewBox="0 0 42 42" width="150" height="150" role="img" aria-label="장기 미개정 조문 29개 기간별 비율">
+            <circle cx="21" cy="21" r="15.915" fill="none" stroke="var(--beige)" stroke-width="7"/>
+            <circle cx="21" cy="21" r="15.915" fill="none" stroke="var(--red)" stroke-width="7" stroke-dasharray="17.24 82.76" stroke-dashoffset="25"/>
+            <circle cx="21" cy="21" r="15.915" fill="none" stroke="var(--red-lt)" stroke-width="7" stroke-dasharray="37.93 62.07" stroke-dashoffset="7.76"/>
+            <circle cx="21" cy="21" r="15.915" fill="none" stroke="var(--blue)" stroke-width="7" stroke-dasharray="27.59 72.41" stroke-dashoffset="69.83"/>
+            <circle cx="21" cy="21" r="15.915" fill="none" stroke="var(--blue-lt)" stroke-width="7" stroke-dasharray="17.24 82.76" stroke-dashoffset="42.24"/>
+            <text x="21" y="21" text-anchor="middle" font-size="8" font-weight="900" fill="var(--ink)" font-family="Noto Serif KR,serif">29</text>
+            <text x="21" y="26.5" text-anchor="middle" font-size="3.4" fill="var(--muted)">개 조문</text>
+          </svg>
+          <ul class="legend">
+            <li><i style="background:var(--red)"></i>30년 이상<b>5</b></li>
+            <li><i style="background:var(--red-lt)"></i>20~30년<b>11</b></li>
+            <li><i style="background:var(--blue)"></i>10~20년<b>8</b></li>
+            <li><i style="background:var(--blue-lt)"></i>5~10년<b>5</b></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card">
+        <p class="card-title">대표적인 ‘박제’ 공제 <span>동결 기간</span></p>
+        <div class="hbar"><div class="lab">양도세 기본공제 <b>250만 원 · 30년</b></div><div class="track"><div class="fill red" style="width:100%">30년</div></div></div>
+        <div class="hbar"><div class="lab">상속 일괄공제 <b>5억 원 · 29년</b></div><div class="track"><div class="fill red" style="width:96.7%">29년</div></div></div>
+        <div class="hbar"><div class="lab">배우자 상속공제 <b>5억 원 · 29년</b></div><div class="track"><div class="fill red" style="width:96.7%">29년</div></div></div>
+        <div class="hbar"><div class="lab">보장성보험료 세액공제 <b>100만 원 · 24년</b></div><div class="track"><div class="fill" style="width:80%">24년</div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 02 상속세 -->
+  <section class="blk blue">
+    <h2 class="sec-head"><span class="no">02</span><span class="hl">“상속세가 중산층 발목까지”</span></h2>
+    <p class="lede">‘부자만 내던 세금’이 20년 새 10배 넘게 늘었습니다. 29개 중 13개가 상속·증여세 항목입니다.</p>
+
+    <div class="card">
+      <p class="card-title">상속세 부과 대상 피상속인 <span>자료: 국세청 국세통계포털</span></p>
+      <div class="versus">
+        <div class="col">
+          <div class="num">1,816명</div>
+          <div class="bar-v" style="height:10px"></div>
+          <div class="yr">2005년</div>
+          <div class="sub">사망자의 0.7%</div>
+        </div>
+        <div class="times"><span><b>12배</b>증가</span></div>
+        <div class="col hot">
+          <div class="num">22,524명</div>
+          <div class="bar-v" style="height:130px"></div>
+          <div class="yr">지난해</div>
+          <div class="sub">사망자의 16%</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <p class="card-title">똑같이 5,000만 원을 벌었을 때 <span>세금·4대 보험</span></p>
+      <div class="tax">
+        <div><span class="v">790만 원</span><span class="b" style="height:150px"></span></div>
+        <div class="zero"><span class="v">0원</span><span class="b"></span></div>
+        <div class="zero"><span class="v">0원</span><span class="b"></span></div>
+      </div>
+      <div class="tax-lab"><span>근로소득</span><span>1주택 양도차익<br>(2년 이상 보유)</span><span>국내 상장주식<br>투자 수익</span></div>
+    </div>
+
+    <p class="quote">명확한 부자감세는 반대합니다. 중산층·샐러리맨의 가처분소득을 늘리자는 겁니다.</p>
+  </section>
+
+  <!-- 03 결의안 -->
+  <section class="blk blue">
+    <h2 class="sec-head"><span class="no">03</span><span class="hl">“반드시 물가연동제로”</span></h2>
+    <p class="lede">문제 제기에 그치지 않고 국회 차원의 결의안으로 후속 조치에 나섰습니다.</p>
+
+    <div class="flow" aria-label="결의안 흐름도">
+      <div class="step bad"><div class="ico">문제</div><div><h4>공제·과세표준 수십 년 동결</h4><p>물가·자산가격만 오름</p></div></div>
+      <div class="arrow"></div>
+      <div class="step bad"><div class="ico">결과</div><div><h4>스텔스 증세</h4><p>부유세가 중산층 세금으로 변질</p></div></div>
+      <div class="arrow"></div>
+      <div class="step fix"><div class="ico">해법</div><div><h4>물가연동제 도입</h4><p>독일처럼 4~5년마다 공제액 조정</p></div></div>
+      <div class="arrow"></div>
+      <div class="step good"><div class="ico">효과</div><div><h4>응능부담 원칙 회복</h4><p>능력에 맞는 공평 과세 · 가처분소득 ↑</p></div></div>
+    </div>
+
+    <div class="who">
+      <span class="main">대표발의 이광재</span>
+      <span>민주당 의원 19명</span>
+      <span class="red">국민의힘 박수영 의원 동조</span>
+    </div>
+  </section>
+
+  <!-- 04 예산 -->
+  <section class="blk blue">
+    <h2 class="sec-head"><span class="no">04</span>예결위원장 이광재, <span class="hl">“40조 불용액 따져 묻겠다”</span></h2>
+    <p class="lede">돈 쓰는 국가에서 돈 버는 국가로 — 늘릴 곳은 늘리고, 새는 곳은 막습니다.</p>
+
+    <div class="kpis">
+      <div class="kpi"><div class="n">40<small>조 원</small></div><p>매년 쓰지 못하고 남는 불용액</p></div>
+      <div class="kpi"><div class="n">98<small>%</small></div><p>부처 ‘셀프 평가’ R&amp;D 성공률</p></div>
+    </div>
+
+    <div class="two">
+      <div class="card">
+        <p class="card-title">국가의 4개 돈주머니 <span>합계 7,000조 원+</span></p>
+        <svg viewBox="0 0 300 260" role="img" aria-label="예산, 연기금, 국공유 자산, 정책금융이 순환하는 선순환 구조">
+          <defs><marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="var(--red)"/></marker></defs>
+          <circle cx="150" cy="130" r="88" fill="none" stroke="var(--beige-line)" stroke-width="2" stroke-dasharray="4 4"/>
+          <path d="M196 62 A88 88 0 0 1 228 100" fill="none" stroke="var(--red)" stroke-width="3" marker-end="url(#ah)"/>
+          <path d="M228 162 A88 88 0 0 1 196 198" fill="none" stroke="var(--red)" stroke-width="3" marker-end="url(#ah)"/>
+          <path d="M104 198 A88 88 0 0 1 72 162" fill="none" stroke="var(--red)" stroke-width="3" marker-end="url(#ah)"/>
+          <path d="M72 100 A88 88 0 0 1 104 62" fill="none" stroke="var(--red)" stroke-width="3" marker-end="url(#ah)"/>
+          <circle cx="150" cy="130" r="44" fill="var(--red-soft)" stroke="var(--red-lt)"/>
+          <text x="150" y="126" text-anchor="middle" fill="var(--red-deep)" font-size="15" font-weight="900">선순환</text>
+          <text x="150" y="145" text-anchor="middle" fill="var(--red-dk)" font-size="11" font-weight="700">7,000조+</text>
+          <g font-size="14" font-weight="900" text-anchor="middle" stroke-width="1">
+            <rect x="110" y="22" width="80" height="34" rx="8" fill="var(--blue-soft)" stroke="var(--blue-lt)"/><text x="150" y="44" fill="var(--blue-deep)" stroke="none">예산</text>
+            <rect x="214" y="113" width="80" height="34" rx="8" fill="var(--blue-soft)" stroke="var(--blue-lt)"/><text x="254" y="135" fill="var(--blue-deep)" stroke="none">연기금</text>
+            <rect x="104" y="204" width="92" height="34" rx="8" fill="var(--blue-soft)" stroke="var(--blue-lt)"/><text x="150" y="226" fill="var(--blue-deep)" stroke="none">정책금융</text>
+            <rect x="4" y="113" width="92" height="34" rx="8" fill="var(--blue-soft)" stroke="var(--blue-lt)"/><text x="50" y="135" fill="var(--blue-deep)" stroke="none">국공유 자산</text>
+          </g>
+        </svg>
+      </div>
+      <div class="card">
+        <p class="card-title">대폭 늘릴 예산</p>
+        <div class="chips"><span>AI</span><span>일자리</span><span>주택</span><span>교육</span><span>철도</span></div>
+        <p class="quote" style="font-size:15.5px">1일 생활권 시대를 열어야 서울과 지방이 공존할 수 있습니다.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 05 성적표 -->
+  <section class="blk blue">
+    <h2 class="sec-head"><span class="no">05</span><span class="hl">“고성방가 의원, 곧 역사 속으로”</span></h2>
+    <p class="lede">고성 대신 국민 삶의 질로 평가받는 정치 — 데이터 기반 ‘의원 성적표’를 제안합니다.</p>
+
+    <div class="card">
+      <p class="card-title">성적표 평가 항목</p>
+      <div class="score">
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="var(--blue)" stroke-width="2"><rect x="3" y="7" width="18" height="13"/><path d="M8 7V4h8v3"/></svg>일자리</div>
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="var(--blue)" stroke-width="2"><path d="M3 11l9-7 9 7v9H3z"/></svg>집</div>
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="var(--blue)" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M5 21c1-4 4-6 7-6s6 2 7 6"/></svg>보육</div>
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="var(--blue)" stroke-width="2"><path d="M2 8l10-5 10 5-10 5z"/><path d="M6 10v6c3 2 9 2 12 0v-6"/></svg>교육</div>
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="var(--red)" stroke-width="2"><path d="M12 4v16M4 12h16"/></svg>의료</div>
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="var(--blue)" stroke-width="2"><circle cx="12" cy="12" r="8"/><path d="M10 9l5 3-5 3z"/></svg>문화생활</div>
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="var(--blue)" stroke-width="2"><path d="M12 21s-8-5-8-11a4 4 0 0 1 8-1 4 4 0 0 1 8 1c0 6-8 11-8 11z"/></svg>노후</div>
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="var(--blue)" stroke-width="2"><circle cx="12" cy="12" r="8"/><path d="M12 7v10M9 9.5h4.5a1.5 1.5 0 0 1 0 3h-3a1.5 1.5 0 0 0 0 3H15"/></svg>연금</div>
+      </div>
+      <div class="rank">
+        <div><b>226</b><p>개 지자체 순위 공개</p></div>
+        <div><b>254</b><p>명 지역구 의원 순위 공개</p></div>
+      </div>
+    </div>
+
+    <p class="quote">고성방가로 국력을 낭비하는 의원들은 곧 역사 속으로 사라질 겁니다.</p>
+  </section>
+
+  <section class="blk red cta">
+    <p>한국일보 · 이영태 논설위원 ‘이영태의 초점’</p>
+    <h3>인터뷰 전문은<br>기사 원문에서 확인하세요</h3>
+    <a href="https://n.news.naver.com/article/469/0000961156?sid=100" target="_blank" rel="noopener">기사 원문 보기 →</a>
+  </section>
+
+  <footer class="blk beige">
+    <b>이광재 의정소식</b> · 더불어민주당 국회의원(경기 하남갑) · 국회 예산결산특별위원장<br>
+    한국일보 보도를 요약한 의정활동 홍보물입니다. 기사·지면의 저작권은 한국일보에 있습니다.
+  </footer>
+</div>
+</body>
+</html>
