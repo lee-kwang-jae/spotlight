@@ -141,10 +141,31 @@
   .step p{margin:2px 0 0;font-size:13.5px;color:var(--muted)}
   .arrow{height:24px;display:grid;place-items:center}
   .arrow::after{content:"";border-left:9px solid transparent;border-right:9px solid transparent;border-top:11px solid var(--red)}
-  .who{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
-  .who span{font-size:13.5px;font-weight:700;padding:5px 12px;border-radius:999px;background:var(--card);border:1px solid var(--blue-lt);color:var(--blue-deep)}
-  .who span.main{background:var(--blue);border-color:var(--blue);color:#fff}
-  .who span.red{background:var(--red-soft);border-color:var(--red-lt);color:var(--red-deep)}
+  /* 결의안 참여 다이어그램 */
+  .coalition{text-align:center}
+  .hub{display:inline-block;min-width:68%;background:var(--blue);color:#fff;border-radius:12px;padding:12px 18px 10px}
+  .hub .tag{display:inline-block;background:#fff;color:var(--blue-deep);font-size:12px;font-weight:900;padding:1px 10px;border-radius:999px}
+  .hub b{display:block;font-family:"Noto Serif KR",serif;font-weight:900;font-size:28px;line-height:1.3;margin-top:4px}
+  .hub small{display:block;font-size:12.5px;color:var(--blue-pale)}
+  .branch{position:relative;height:30px}
+  .branch::before{content:"";position:absolute;left:50%;top:0;height:14px;border-left:2px solid var(--blue-lt)}
+  .branch::after{content:"";position:absolute;left:25%;right:25%;top:14px;height:16px;border:2px solid var(--blue-lt);border-bottom:0;border-radius:8px 8px 0 0}
+  .groups{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+  .grp{position:relative;border:1px solid var(--blue-lt);border-radius:10px;background:var(--blue-soft);padding:14px 8px 12px}
+  .grp::before{content:"";position:absolute;top:-1px;left:50%;transform:translateX(-50%);border:6px solid transparent;border-top:8px solid var(--blue-lt)}
+  .grp .gtag{margin:0 0 8px;font-size:12px;font-weight:900;color:var(--blue)}
+  .ppl{display:flex;flex-wrap:wrap;justify-content:center;gap:3px;min-height:62px;align-content:center;max-width:130px;margin:0 auto}
+  .ppl svg{width:15px;height:18px;fill:var(--blue)}
+  .grp .cnt{display:block;font-family:"Noto Serif KR",serif;font-weight:900;font-size:34px;line-height:1.1;margin-top:8px;color:var(--blue-deep)}
+  .grp .cnt small{font-size:.45em;margin-left:1px}
+  .grp .who{margin:2px 0 0;font-size:13.5px;font-weight:700;color:var(--blue-deep);line-height:1.4}
+  .grp.ppp{border-color:var(--red-lt);background:var(--red-soft)}
+  .grp.ppp::before{border-top-color:var(--red-lt)}
+  .grp.ppp .gtag{color:var(--red-dk)}
+  .grp.ppp .ppl svg{width:30px;height:36px;fill:var(--red)}
+  .grp.ppp .cnt,.grp.ppp .who{color:var(--red-deep)}
+  .bridge{margin-top:10px;background:var(--red-dk);color:#fff;border-radius:10px;padding:10px 12px;font-weight:900;font-size:16px;line-height:1.4}
+  .bridge span{display:block;font-weight:500;font-size:12.5px;color:var(--red-pale)}
 
   /* 예산 */
   .kpis{display:grid;grid-template-columns:1fr 1fr;gap:8px}
@@ -319,10 +340,26 @@
       <div class="step good"><div class="ico">효과</div><div><h4>응능부담 원칙 회복</h4><p>능력에 맞는 공평 과세 · 가처분소득 ↑</p></div></div>
     </div>
 
-    <div class="who">
-      <span class="main">대표발의 이광재</span>
-      <span>민주당 의원 19명</span>
-      <span class="red">국민의힘 박수영 의원 동조</span>
+    <div class="card coalition" aria-label="결의안 참여 의원 다이어그램">
+      <p class="card-title">누가 함께했나 <span>과세·제재 기준 현실화 결의안</span></p>
+      <svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="person" viewBox="0 0 20 24"><circle cx="10" cy="6" r="5"/><path d="M1 24c0-6 4-10 9-10s9 4 9 10z"/></symbol></svg>
+      <div class="hub"><span class="tag">대표발의</span><b>이광재</b><small>국회 예산결산특별위원장</small></div>
+      <div class="branch"></div>
+      <div class="groups">
+        <div class="grp">
+          <p class="gtag">공동 참여</p>
+          <div class="ppl" aria-hidden="true"><svg><use href="#person"/></svg><svg><use href="#person"/></svg><svg><use href="#person"/></svg><svg><use href="#person"/></svg><svg><use href="#person"/></svg><svg><use href="#person"/></svg><svg><use href="#person"/></svg><svg><use href="#person"/></svg><svg><use href="#person"/></svg><svg><use href="#person"/></svg><svg><use href="#person"/></svg><svg><use href="#person"/></svg><svg><use href="#person"/></svg><svg><use href="#person"/></svg><svg><use href="#person"/></svg><svg><use href="#person"/></svg><svg><use href="#person"/></svg><svg><use href="#person"/></svg><svg><use href="#person"/></svg></div>
+          <b class="cnt">19<small>명</small></b>
+          <p class="who">더불어민주당 의원</p>
+        </div>
+        <div class="grp ppp">
+          <p class="gtag">동조 기자회견</p>
+          <div class="ppl" aria-hidden="true"><svg><use href="#person"/></svg></div>
+          <b class="cnt">1<small>명</small></b>
+          <p class="who">국민의힘<br>박수영 의원</p>
+        </div>
+      </div>
+      <div class="bridge">여야를 넘어 ‘공제 현실화’에 공감<span>문제 제기를 넘어 국회 차원의 후속 조치로</span></div>
     </div>
   </section>
 
