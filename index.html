@@ -52,6 +52,12 @@
   .blk.blue{background:var(--blue-soft);border-color:var(--blue-lt)}
   .blk.navy{background:var(--blue-deep);border-color:var(--blue-deep);color:#fff}
 
+  /* 상단 고정 원문 보기 띠 */
+  .pinbar{position:sticky;top:0;z-index:20;display:flex;align-items:center;justify-content:space-between;gap:10px;margin:-16px 0 12px;padding:9px 16px;background:rgba(250,249,245,.97);border-bottom:1px solid var(--beige-line)}
+  .pinbar span{font-size:12.5px;font-weight:700;color:var(--muted);line-height:1.35}
+  .pinbar a{flex:none;background:var(--red-dk);color:#fff;text-decoration:none;font-weight:900;font-size:14.5px;padding:8px 14px;border-radius:8px}
+  .pinbar a:hover{background:var(--blue)}
+
   /* 제호 · 속보 */
   .top{padding:16px 20px}
   .masthead{display:flex;align-items:center;justify-content:space-between;gap:6px;flex-wrap:wrap}
@@ -195,6 +201,7 @@
   @media (max-width:639px){
     body{background:var(--page)}
     .sheet{padding:12px 0 4px}
+    .pinbar{margin-top:-12px;padding:8px 12px}
     .blk{margin:0 12px 12px;padding:22px 16px}
     .top{padding:16px}
     .paper{padding:12px}
@@ -208,6 +215,11 @@
 </head>
 <body>
 <div class="sheet">
+
+  <div class="pinbar">
+    <span>한국일보 ‘이영태의 초점’<br>이광재 의원 인터뷰</span>
+    <a href="https://n.news.naver.com/article/469/0000961156?sid=100" target="_blank" rel="noopener">기사 원문 보기 →</a>
+  </div>
 
   <header class="blk red top watch">
     <div class="masthead">
